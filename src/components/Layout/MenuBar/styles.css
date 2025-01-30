@@ -1,0 +1,159 @@
+.menu-bar {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	/*padding: 12px 24px;*/
+	/*height: 100px;*/
+	background: linear-gradient(90deg, rgba(5,71,105,1) 0%, rgba(5,150,183,1) 100%);
+}
+
+.menu-bar .logo-pages {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 48px;
+}
+
+.menu-bar span {
+	color: white !important;
+	font-size: 18px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.menu-bar .p-menubar-mobile-active span {
+	color: rgba(0, 0, 0, 0.7) !important;
+	font-size: 18px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.menu-bar .p-submenu-icon {
+	color: white !important;
+	font-size: 18px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.menu-bar .p-submenu-list {
+	width: 300px;
+}
+
+.menu-bar .logout-menu .p-submenu-list {
+	width: 120px;
+	left: -32px;
+}
+
+.menu-bar .p-submenu-list span {
+	color: rgba(0, 0, 0, 0.7) !important;
+	font-size: 16px;
+}
+
+.p-menubar-root-list {
+	width: 100%;
+}
+
+.profile-item {
+	margin-left: auto;
+}
+
+.profile-item .p-submenu-list {
+	left: -100%;
+}
+
+.login-item {
+	margin-left: auto;
+}
+
+.menu-bar img {
+	height: 70px;
+
+	cursor: pointer;
+}
+
+.menu-bar .profile {
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	margin-right: 28px;
+}
+
+.menu-bar .profile i {
+	color: white;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.menu-bar .profile .profile-menu {
+	display: flex;
+	flex-direction: column;
+	padding: 12px;
+	gap: 12px;
+	background: white;
+	border-radius: 4px;
+	box-shadow: -1px 3px 8px -3px rgb(128, 128, 128);
+	
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	top: 120%;
+	left: auto;
+	z-index: 1100;
+	transition: all 0.3s ease 0s, visibility 0s linear  0.3s, z-index 0s linear 0.01s;
+}
+
+.menu-bar .profile:focus .profile-menu,
+.menu-bar .profile:focus-within .profile-menu,
+.menu-bar .profile:hover .profile-menu {
+	visibility: visible;
+	opacity: 1;
+	z-index: 1100;
+	transition-delay: 0s,0s,0.3s;
+}
+
+.menu-bar .profile .profile-menu i {
+	color: #054769;
+	font-size: 20px;
+}
+
+.menu-bar .profile .profile-menu p {
+	color: #054769;
+}
+
+.menu-bar .profile .profile-menu .selection-group {
+	display: flex;
+	flex-direction: row;
+	gap: 12px;
+	align-items: center;
+	cursor: pointer;
+}
+
+.p-menubar-end {
+	margin-left: auto
+}
+
+.p-menubar {
+	border: unset;
+}
+
+.menu-bar .my-apis.p-button {
+	background-color: transparent !important;
+}
+
+.menu-bar .my-apis.p-button .p-button-label {
+	color: #b6b6b6 !important;
+}
+
+@media screen and (max-width: 960px) {
+	.p-menubar .p-menubar-button {
+		display: flex;
+		width: 2.5rem;
+		height: 2.5rem;
+		color: rgb(255 255 255) !important;
+		border-radius: 50%;
+		transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+	}
+}

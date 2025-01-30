@@ -1,0 +1,41 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  background: white;
+  width: 100%;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.p-grid {
+  margin: 0;
+}
+
+.p-component, .p-link {
+  font-family: Montserrat;
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: Lato;
+  margin: 0;
+}
+
+p, span, div {
+  font-family: Montserrat;
+  margin: 0 !important;
+}
+
+a {
+  text-decoration: unset;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+
+.p-paginator {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,51 @@
+/* κεντρικο fieldset */
+.data-cleaner .fieldset-odk {
+	font-size: large;
+	margin: 5% 10%;
+	box-shadow: 0 2px 13px #00000030;
+	border: 1px solid silver;
+}
+
+/* legend μεσα στο fieldset */
+
+.data-cleaner .p-fieldset-legend{
+	background: #fff;
+	box-shadow: 0 2px 13px #00000030;
+	border: 1px solid silver;
+}
+
+/* στo div με class p-fieldset-content */
+
+.data-cleaner .p-fieldset-content {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+/* 2o div μεσα στo class p-fieldset-content */
+
+.data-cleaner .upload-survey {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+/* μεσα στο content του codebook αφου εχει γινει check στo div με class flex ??? */
+.data-cleaner .fieldset-odk .flex {
+	display: flex;
+	flex-direction: column;
+}
+
+/* μεσα στo div με class flex, divs που εχουν τα children (h4, div.p-fileupload p-fileupload-advanced p-component) */
+
+.data-cleaner .upload-container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+/* button Transform Data using Codebook */
+
+.data-cleaner .transform {
+	width: fit-content;
+}

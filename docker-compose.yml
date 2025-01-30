@@ -1,0 +1,7 @@
+services:
+  app:
+    image: sciohub/agrotidy-ui:${ENV}
+    container_name: agrotidy-ui
+    restart: unless-stopped
+    ports:
+      - 3000:80

@@ -1,0 +1,39 @@
+/* κεντρικο fieldset */
+
+.crop-model .fieldset-odk {
+	font-size: large;
+	margin: 5% 10%;
+
+	box-shadow: 0 2px 13px #00000030;
+	border: 1px solid silver;
+}
+
+/* legend μεσα στο fieldset */
+
+.crop-model .p-fieldset-legend{
+	background: #fff;
+	box-shadow: 0 2px 13px #00000030;
+	border: 1px solid silver;
+}
+
+/* στo div με class p-fieldset-content */
+
+.crop-model .p-fieldset-content {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+/* μεσα στo div με class p-fieldset-content,  μεσα στο τελευταιο p, στο span (select output model) */
+
+.crop-model .select-output {
+	margin-right: 10px;
+}
+
+/* μεσα στo div με class flex, divs που εχουν τα children (h4, div.p-fileupload p-fileupload-advanced p-component)?? */
+
+.crop-model .uploader-container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
